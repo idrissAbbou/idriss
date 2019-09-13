@@ -11,14 +11,11 @@
             </div>
             <div class="header--icons--col col-12 mt-3">
               <div class="header--icons">
-                <a href>
+                <a href="https://www.facebook.com/idriss.abbou.77" target="_blank">
                   <i class="icon devicon-facebook-plain"></i>
                 </a>
-                <a href>
+                <a href="https://github.com/idrissAbbou" target="_blank">
                   <i class="icon devicon-github-plain"></i>
-                </a>
-                <a href>
-                  <i class="icon fas fa-envelope-open"></i>
                 </a>
               </div>
             </div>
@@ -108,6 +105,7 @@ export default {
           transform: scale(1.2);
       }
   }
+
 
 }
 
