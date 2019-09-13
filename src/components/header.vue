@@ -4,18 +4,18 @@
       <div class="row">
         <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
           <div class="row ">
-            <div class="col-12 align-items-center d-flex">
+            <div class="header--title col-12 align-items-center d-flex">
               <h1 class="text-capitalize header--text">
-                <span class="hello d-block">Hello I'm</span><span>idriss abbou</span>
+                <span class="hello">Hello I'm</span><span> idriss abbou</span>
               </h1>
             </div>
-            <div class="col-12  mt-3">
+            <div class="header--icons--col col-12 mt-3">
               <div class="header--icons">
                 <a href>
-                  <i class="icon fab fa-facebook"></i>
+                  <i class="icon devicon-facebook-plain"></i>
                 </a>
                 <a href>
-                  <i class="icon fab fa-github"></i>
+                  <i class="icon devicon-github-plain"></i>
                 </a>
                 <a href>
                   <i class="icon fas fa-envelope-open"></i>
@@ -88,6 +88,7 @@ export default {
     .hello {
         font-size: 7rem;
         margin-left: -.8rem;
+        display: block;
     }
   &--card {
     box-shadow: 1px 1px 2px black;
@@ -120,4 +121,36 @@ export default {
     opacity: 1;
   }
 }
+
+  @media (max-width:768px) {
+   .header {
+     height: 100%;
+
+
+     &--title, &--icons--col  {
+       justify-content: center;
+       display: flex;
+     }
+    &--icons--col {
+      margin-bottom: 2rem;
+    }
+     
+     .container {
+       margin-top: 4rem;
+     }
+      h1 {
+        text-align: center !important;
+        
+      }
+     .hello {
+      font-size: 2.5rem;
+      display: inline;
+     }
+
+     .icon {
+       font-size: 2rem;
+     }
+   } 
+  }
+
 </style>

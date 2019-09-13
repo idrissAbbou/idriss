@@ -48,4 +48,9 @@ export default {
     nav {
         background-color: rgba(0,0,0, .2) !important;
     }
+    @media (max-width: 992px) { 
+        nav {
+            background-color: rgba(0,0,0, 1) !important;
+        }   
+    }
 </style>

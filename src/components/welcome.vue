@@ -1,12 +1,12 @@
 <template>
   <div class="welcome d-flex justify-content-center align-items-center">
-    <div class="row">
-      <div class="col-6 p-5 d-flex flex-column justify-content-center">
-        <h1 class>Hi I hope you will like the tour on my website</h1>
-        <p>this my portfolio a website for you but for me a place where I can show what I can build.
+    <div class="row h-100">
+      <div class="col-md-6 col-sm-12 p-5 d-flex flex-column justify-content-center">
+        <h1 class="welcome--title">Hi I hope you will like the tour on my website</h1>
+        <p class="welcome--paragraph">this my portfolio a website for you but for me a place where I can show what I can build.
             
         </p>
-        <blockquote class="blockquote">
+        <blockquote class="blockquote welcome--blockquote">
           <p
             class="mb-0"
           >Show me the code talking is cheap</p>
@@ -16,7 +16,7 @@
           </footer>
         </blockquote>
       </div>
-      <div class="col-6">
+      <div class="col-md-6 col-sm-12 d-flex align-items-center">
         <img src="../assets/waving-girl.gif" class="w-100" alt />
       </div>
 
@@ -53,5 +53,22 @@ export default {
     padding: 1rem;
     display: block;
   }
+
 }
+
+
+  @media (max-width: 768px) { 
+    .welcome {
+      &--title {
+        font-size: 1.5rem;
+      }
+      &--paragraph, &--blockquote {
+        font-size: 1rem;
+      }
+
+      .close {
+        
+      }
+    }
+  }
 </style>
