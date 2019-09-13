@@ -140,7 +140,7 @@ export default {};
 }
 @media (max-width: 576px) {
   .study {
-    background: linear-gradient(to bottom right, #007fff , black);
+    // background: linear-gradient(to bottom right, #007fff , black);
     height: 100%;
   }
 }
